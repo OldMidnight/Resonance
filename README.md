@@ -1,0 +1,1 @@
+Sample website for a product called Auto Translate. 
