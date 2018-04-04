@@ -14,7 +14,8 @@ body {
 	width: 100%;
 	min-height: 100%;
 	background-size: cover;
-	background-image: url(../Resources/Images/background_img/sea.jpeg);
+	background-color: #D6D6D6;
+	/*background-image: url(../Resources/Images/background_img/sea.jpeg);*/
 	background-repeat: no-repeat;
 	flex-direction: column;
 }
@@ -35,7 +36,7 @@ main {
 	margin-top: 3%; 
 	margin-left: 10%;
 	margin-right: 10%;
-	background-color: #D6D6D6;
+	/*background-color: #D6D6D6; */
 	/*(border: 1px solid hidden; */
 	/*opacity: 0.8; */
 	flex: 1 0 auto;
