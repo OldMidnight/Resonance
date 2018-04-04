@@ -36,8 +36,8 @@ main {
 	margin-left: 10%;
 	margin-right: 10%;
 	background-color: #D6D6D6;
-	/*(border: 1px solid hidden;
-	opacity: 0.8; */
+	/*(border: 1px solid hidden; */
+	/*opacity: 0.8; */
 	flex: 1 0 auto;
 }
 
