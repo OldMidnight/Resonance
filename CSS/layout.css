@@ -161,7 +161,7 @@ footer {
 }
 
 .main-btn {
-	position: fixed;
+	/*position: fixed;*/
 	margin-left: 10px;
 	height: 50px;
 	width: 150px;
