@@ -1,0 +1,21 @@
+.contact-form {
+    text-align: center;
+}
+
+input.contact-input-item:not(.submit), textarea.contact-input-item {
+    background-color: #f4f4f4;
+    font-family: sans-serif;
+    border: 1px solid #e2e2e2;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+textarea.contact-input-item {
+    width: 30em;
+    height: 100px;
+}
+
+li.contact-list-item {
+    margin: 10px 0 10px 0;
+}
