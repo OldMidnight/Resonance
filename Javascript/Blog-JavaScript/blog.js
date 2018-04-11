@@ -1,26 +1,21 @@
 "use strict";
 
-const BLOG_POSTS = [
-    { title: "some_title0"
-    , body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloribus sed nemo enim modi veniam aliquam dolorem fugiat rerum recusandae saepe facere placeat, voluptatibus sapiente iusto rem eum itaque vero voluptates repellendus earum illo quis? Possimus itaque voluptatibus ab fugiat voluptatum omnis quia accusantium dolore adipisci! Velit recusandae perspiciatis praesentium rem laborum numquam, perferendis molestiae omnis dicta, nobis, ducimus libero doloremque fugit. Voluptate vitae vel aliquam, doloremque maiores ab commodi nulla adipisci non quasi culpa, quidem quaerat beatae facere, reiciendis itaque! Dolores facere iusto, officiis aut eveniet nobis assumenda voluptate iste nihil beatae reprehenderit quisquam molestiae, nisi minus repellat inventore odit, quod reiciendis dolore voluptatibus eligendi sit delectus voluptatum nam. Officiis voluptas cumque molestias veritatis facilis nemo debitis atque id deserunt quis magni blanditiis unde, eum fugiat. Optio explicabo asperiores sunt temporibus, repellat aperiam quam deleniti mollitia. Vel illo dolores mollitia? Expedita dicta officia aut autem nemo debitis mollitia harum, nesciunt ea vero illo repellendus hic dolor placeat doloremque perferendis sapiente? Soluta possimus, iusto fugit eum provident ipsa. Ullam amet nostrum perspiciatis, a rem laborum alias, voluptatibus quia harum incidunt, velit fuga ea aspernatur hic aperiam dignissimos quasi voluptas tempore! Iure ipsam minus saepe vel exercitationem iste, rem iusto tempore."
-    , date: "date/author"
+const blogPosts = [
+    { title: "First Blog"
+    , body: `<p>Hi!</p>
+             <p>Welcome to the first post on our new blog! This will be used by the team to announce news and go into more depth on new products. All of our social media accounts will provide links to this blog for those who wish to read about announcements in more detail.</p>
+             <p>Thanks for reading!</p>
+             <p>Conor.</p>`
+    , date: "Conor 1/04/2018"
     },
-    { title: "some_title1"
-    , body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloribus sed nemo enim modi veniam aliquam dolorem fugiat rerum recusandae saepe facere placeat, voluptatibus sapiente iusto rem eum itaque vero voluptates repellendus earum illo quis? Possimus itaque voluptatibus ab fugiat voluptatum omnis quia accusantium dolore adipisci! Velit recusandae perspiciatis praesentium rem laborum numquam, perferendis molestiae omnis dicta, nobis, ducimus libero doloremque fugit. Voluptate vitae vel aliquam, doloremque maiores ab commodi nulla adipisci non quasi culpa, quidem quaerat beatae facere, reiciendis itaque! Dolores facere iusto, officiis aut eveniet nobis assumenda voluptate iste nihil beatae reprehenderit quisquam molestiae, nisi minus repellat inventore odit, quod reiciendis dolore voluptatibus eligendi sit delectus voluptatum nam. Officiis voluptas cumque molestias veritatis facilis nemo debitis atque id deserunt quis magni blanditiis unde, eum fugiat. Optio explicabo asperiores sunt temporibus, repellat aperiam quam deleniti mollitia. Vel illo dolores mollitia? Expedita dicta officia aut autem nemo debitis mollitia harum, nesciunt ea vero illo repellendus hic dolor placeat doloremque perferendis sapiente? Soluta possimus, iusto fugit eum provident ipsa. Ullam amet nostrum perspiciatis, a rem laborum alias, voluptatibus quia harum incidunt, velit fuga ea aspernatur hic aperiam dignissimos quasi voluptas tempore! Iure ipsam minus saepe vel exercitationem iste, rem iusto tempore."
-    , date: "date/author"
-    },
-    { title: "some_title2"
-    , body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloribus sed nemo enim modi veniam aliquam dolorem fugiat rerum recusandae saepe facere placeat, voluptatibus sapiente iusto rem eum itaque vero voluptates repellendus earum illo quis? Possimus itaque voluptatibus ab fugiat voluptatum omnis quia accusantium dolore adipisci! Velit recusandae perspiciatis praesentium rem laborum numquam, perferendis molestiae omnis dicta, nobis, ducimus libero doloremque fugit. Voluptate vitae vel aliquam, doloremque maiores ab commodi nulla adipisci non quasi culpa, quidem quaerat beatae facere, reiciendis itaque! Dolores facere iusto, officiis aut eveniet nobis assumenda voluptate iste nihil beatae reprehenderit quisquam molestiae, nisi minus repellat inventore odit, quod reiciendis dolore voluptatibus eligendi sit delectus voluptatum nam. Officiis voluptas cumque molestias veritatis facilis nemo debitis atque id deserunt quis magni blanditiis unde, eum fugiat. Optio explicabo asperiores sunt temporibus, repellat aperiam quam deleniti mollitia. Vel illo dolores mollitia? Expedita dicta officia aut autem nemo debitis mollitia harum, nesciunt ea vero illo repellendus hic dolor placeat doloremque perferendis sapiente? Soluta possimus, iusto fugit eum provident ipsa. Ullam amet nostrum perspiciatis, a rem laborum alias, voluptatibus quia harum incidunt, velit fuga ea aspernatur hic aperiam dignissimos quasi voluptas tempore! Iure ipsam minus saepe vel exercitationem iste, rem iusto tempore."
-    , date: "date/author"
-    },
-    { title: "some_title3"
-    , body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloribus sed nemo enim modi veniam aliquam dolorem fugiat rerum recusandae saepe facere placeat, voluptatibus sapiente iusto rem eum itaque vero voluptates repellendus earum illo quis? Possimus itaque voluptatibus ab fugiat voluptatum omnis quia accusantium dolore adipisci! Velit recusandae perspiciatis praesentium rem laborum numquam, perferendis molestiae omnis dicta, nobis, ducimus libero doloremque fugit. Voluptate vitae vel aliquam, doloremque maiores ab commodi nulla adipisci non quasi culpa, quidem quaerat beatae facere, reiciendis itaque! Dolores facere iusto, officiis aut eveniet nobis assumenda voluptate iste nihil beatae reprehenderit quisquam molestiae, nisi minus repellat inventore odit, quod reiciendis dolore voluptatibus eligendi sit delectus voluptatum nam. Officiis voluptas cumque molestias veritatis facilis nemo debitis atque id deserunt quis magni blanditiis unde, eum fugiat. Optio explicabo asperiores sunt temporibus, repellat aperiam quam deleniti mollitia. Vel illo dolores mollitia? Expedita dicta officia aut autem nemo debitis mollitia harum, nesciunt ea vero illo repellendus hic dolor placeat doloremque perferendis sapiente? Soluta possimus, iusto fugit eum provident ipsa. Ullam amet nostrum perspiciatis, a rem laborum alias, voluptatibus quia harum incidunt, velit fuga ea aspernatur hic aperiam dignissimos quasi voluptas tempore! Iure ipsam minus saepe vel exercitationem iste, rem iusto tempore."
-    , date: "date/author"
-    },
-    { title: "some_title4"
-    , body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloribus sed nemo enim modi veniam aliquam dolorem fugiat rerum recusandae saepe facere placeat, voluptatibus sapiente iusto rem eum itaque vero voluptates repellendus earum illo quis? Possimus itaque voluptatibus ab fugiat voluptatum omnis quia accusantium dolore adipisci! Velit recusandae perspiciatis praesentium rem laborum numquam, perferendis molestiae omnis dicta, nobis, ducimus libero doloremque fugit. Voluptate vitae vel aliquam, doloremque maiores ab commodi nulla adipisci non quasi culpa, quidem quaerat beatae facere, reiciendis itaque! Dolores facere iusto, officiis aut eveniet nobis assumenda voluptate iste nihil beatae reprehenderit quisquam molestiae, nisi minus repellat inventore odit, quod reiciendis dolore voluptatibus eligendi sit delectus voluptatum nam. Officiis voluptas cumque molestias veritatis facilis nemo debitis atque id deserunt quis magni blanditiis unde, eum fugiat. Optio explicabo asperiores sunt temporibus, repellat aperiam quam deleniti mollitia. Vel illo dolores mollitia? Expedita dicta officia aut autem nemo debitis mollitia harum, nesciunt ea vero illo repellendus hic dolor placeat doloremque perferendis sapiente? Soluta possimus, iusto fugit eum provident ipsa. Ullam amet nostrum perspiciatis, a rem laborum alias, voluptatibus quia harum incidunt, velit fuga ea aspernatur hic aperiam dignissimos quasi voluptas tempore! Iure ipsam minus saepe vel exercitationem iste, rem iusto tempore."
-    , date: "date/author"
-    },
+    { title: "New Logo Released"
+    , body: `<p>Hi!</p>
+             <p>After a lot of hard work, we are proud to present our first logo. We chose this design as it is modern and minimal, which we believe represents us, as a company, well. The new logo can be seen below.</p>
+             <div style="text-align:center"><img src='../../../Resources/Images/Products_Page_Images/Resonance-Logo.png'/></div>
+             <p>Thanks for reading!</p>
+             <p>Conor</p>`
+    , date: "Conor 4/04/2018"
+    }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -30,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const listElement = document.getElementById("blog-title-list");
 
     const updateBlog = id => {
-        const { title, body, date } = BLOG_POSTS[Math.abs(id) % BLOG_POSTS.length];
+        const { title, body, date } = blogPosts[Math.abs(id) % blogPosts.length];
         titleElement.innerHTML = title;
         bodyElement.innerHTML = body;
         dateElement.innerHTML = date;
@@ -39,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById(`title-${id}`).setAttribute("class", "selected-blog-title");
     };
 
-    BLOG_POSTS.forEach((post, index) => {
+    blogPosts.forEach((post, index) => {
         let listItem = document.createElement("li");
         let hyperlink = document.createElement("a");
 
