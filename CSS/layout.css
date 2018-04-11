@@ -55,6 +55,7 @@ main {
 	margin-top: 3%; 
 	margin-left: 10%;
 	margin-right: 10%;
+	min-height: 67.5vh;
 	/*background-color: #D6D6D6; */
 	/*(border: 1px solid hidden; */
 	/*opacity: 0.8; */
@@ -64,6 +65,7 @@ main {
 p {
 	color: #2d2f33;
 	opacity: 10;
+	font-size: 110%;
 }
 	
 

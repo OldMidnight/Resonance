@@ -11,6 +11,9 @@
 
 .blog {
     grid-area: main;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .blog-date {
@@ -37,4 +40,9 @@
 
 .selected-blog-title {
     font-weight: bold;
+}
+
+.blog img {
+    border: 1px solid black;
+    border-radius: 5px;
 }

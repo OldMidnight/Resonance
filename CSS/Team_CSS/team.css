@@ -1,0 +1,48 @@
+.team-container {
+    display: grid;
+    grid-column-gap: 40px;
+}
+
+.team-container img {
+    margin: 10px;
+    max-width: 40vw;
+    display: inline-block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+div.team-who {
+    border-left: 2px solid black;
+    padding-left: 10px;
+}
+
+div.team-why {
+    margin-top: 50px;
+    border-right: 2px solid black;
+    padding-right: 10px;
+}
+
+.team-who p {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.team-who img {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.team-why h2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.team-why img {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.team-why p {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
