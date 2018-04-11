@@ -50,10 +50,19 @@ ol > li:before {
 	padding: 4px;
 	border-top: 2px solid #666;
 	color: #D6D6D6;
-	background: #666;
+	background: #222;
 	font-weight: bold;
 	text-align: center;
 }
 li ol,
 li ul {margin-top: 6px;}
 ol ol li: last-child {margin-bottom: 0;}
+
+.principles {
+	text-align: left;
+	/*font-size: 1.1rem; */
+}
+
+.point {
+	font-size: 1.4rem;
+}
