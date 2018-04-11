@@ -1,0 +1,40 @@
+.blog-container {
+    display: grid;
+    grid-template-areas: "menu main";
+}
+
+.blog-title-list {
+    font-size: 120%;
+    grid-area: menu;
+    padding-right: 5em;
+}
+
+.blog {
+    grid-area: main;
+}
+
+.blog-date {
+    margin-top: -1em;
+    text-align: center;
+    font-style: italic;
+}
+
+.blog-body {
+    padding-bottom: 3em;
+}
+
+.blog-title-list {
+    list-style-type: none;
+}
+
+.blog-title-list a {
+    text-decoration: none;
+}
+
+.blog-title-list li {
+    margin: 8px;
+}
+
+.selected-blog-title {
+    font-weight: bold;
+}
