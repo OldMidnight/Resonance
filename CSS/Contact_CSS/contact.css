@@ -1,0 +1,61 @@
+div#form_div {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 25px 0 5px;
+}
+
+label {
+    float: left;
+    font-size: 16px;
+}
+
+input[type="text"] {
+    font-size: 1.1rem;
+    width: 100%;
+    margin: 10px 0 25px;
+    height: 25px;
+    padding: 5px;
+}
+
+textarea {
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0 25px;
+    height: 80px;
+    resize: none
+}
+
+input[type="submit"] {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 45px;
+    background-color: #222222;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+div#social_div {
+    margin: 100px auto;
+    text-align: center;
+}
+
+#social_div div {
+    text-align: center;
+    display: inline-block;
+    width: 21%;
+    padding: 20px;
+}
+
+#social_div img {
+    width: 55%;
+    margin: 0 auto;
+}
+
+#social_div a {
+    text-decoration: none;
+}
