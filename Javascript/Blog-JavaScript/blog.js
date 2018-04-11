@@ -11,7 +11,7 @@ const blogPosts = [
     { title: "New Logo Released"
     , body: `<p>Hi!</p>
              <p>After a lot of hard work, we are proud to present our first logo. We chose this design as it is modern and minimal, which we believe represents us, as a company, well. The new logo can be seen below.</p>
-             <div style="text-align:center"><img src='../../../Resources/Images/logo.png'/></div>
+             <div style="text-align:center"><img src='../../../Resources/Images/Products_Page_Images/Resonance-Logo.png'/></div>
              <p>Thanks for reading!</p>
              <p>Conor</p>`
     , date: "Conor 4/04/2018"
